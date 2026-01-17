@@ -1,0 +1,41 @@
+/* מיכל הקלט */
+.prompt-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+}
+
+/* שדה הקלט - מעוגל עם מסגרת שחורה דקה */
+.prompt-input-field {
+  flex: 1;
+  padding: 8px 15px;
+  border-radius: 10px;
+  border: 1px solid #000000; /* מסגרת שחורה כמו בתמונה */
+  font-size: 14px;
+  outline: none;
+  direction: rtl; /* התאמה לעברית */
+}
+
+/* כפתור שלח - ירוק ומעוגל (Pill Shape) */
+.prompt-send-button {
+  background-color: #4caf50; /* צבע ירוק מהתמונה */
+  color: white;
+  border: none;
+  padding: 8px 25px;
+  border-radius: 10px; /* פינות מעוגלות */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  min-width: 80px;
+}
+
+.prompt-send-button:hover {
+  background-color: #43a047;
+}
+
+.prompt-send-button:disabled {
+  background-color: #a5d6a7;
+  cursor: not-allowed;
+}

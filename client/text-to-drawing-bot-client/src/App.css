@@ -1,0 +1,126 @@
+/* הגדרות בסיס למרכוז מלא */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* פריסה כללית */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: #f4f7f6;
+}
+
+/* --- המרכוז של מסך הכניסה --- */
+.login-wrapper {
+  display: flex;
+  flex: 1; /* תופס את כל שטח המסך הפנוי */
+  justify-content: center; /* מרכוז אופקי */
+  align-items: center;     /* מרכוז אנכי */
+  padding: 20px;
+}
+
+/* סרגל כפתורים עליון */
+.top-toolbar {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.drawing-select {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  min-width: 160px;
+}
+
+/* כפתורי הסרגל */
+.btn-toolbar {
+  padding: 8px 18px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  transition: opacity 0.2s;
+}
+
+.btn-toolbar:hover { opacity: 0.9; }
+.btn-toolbar:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.btn-new { background-color: #4A90E2; }
+.btn-send { background-color: #7ED321; }
+.btn-undo { background-color: #F5A623; }
+.btn-clear { background-color: #D0021B; }
+.btn-save { background-color: #BD10E0; }
+
+/* פריסת גריד למסך הראשי (אחרי התחברות) */
+.main-layout {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 20px;
+  padding: 20px;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* אזור הצ'אט */
+.chat-area {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.chat-box {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #f9f9f9;
+}
+
+/* בועות צ'אט */
+.chat-msg {
+  max-width: 85%;
+  padding: 10px 14px;
+  border-radius: 15px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.chat-msg.user {
+  align-self: flex-end;
+  background-color: #DCF8C6;
+  border: 1px solid #c5e1a5;
+}
+
+.chat-msg.bot {
+  align-self: flex-start;
+  background-color: #ffffff;
+  border: 1px solid #eee;
+}
+
+/* אזור הקנבס */
+.canvas-wrapper {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
