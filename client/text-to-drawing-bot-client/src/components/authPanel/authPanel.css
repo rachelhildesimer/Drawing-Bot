@@ -6,7 +6,7 @@
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     font-family: 'Segoe UI', system-ui, sans-serif;
     margin: 40px auto;
-    direction: ltr; /* שומר על כיוון המייל והסיסמה */
+    direction: ltr; 
 }
 
 .auth-title {
