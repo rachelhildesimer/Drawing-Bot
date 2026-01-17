@@ -2,7 +2,6 @@
 
 A comprehensive full-stack web application that transforms natural language instructions into visual drawings on an HTML5 Canvas. Users can describe what they want to draw (e.g., "Draw a blue house with a yellow sun"), and the system leverages **Google Gemini AI** to interpret the prompt and render it instantly.
 
--
 
 ## **Project Overview**
 
